@@ -1,0 +1,66 @@
+.single__route{
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.single-route__btn{
+    width: 200px;
+    height: 40px;
+    background: var(--bg-py);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.single__colors{
+    display: flex;
+    gap: 30px;
+}
+.red{
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.green{
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: 
+    green;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue{
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: blue;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bluviolet{
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: blueviolet;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

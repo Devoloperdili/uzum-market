@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+svg{
+    font-size: 20px;
+}
+.footer__instagram{
+    color: crimson;
+    font-size: 30px;
+    margin-left: 5px;
+}
+.footer__telegram{
+color: dodgerblue;
+font-size: 30px;
+}
+.footer__youtube{
+    color: red;
+    font-size: 30px;  
+}
+.footer__facebook{
+    color: blue;
+    font-size: 30px 
+}
