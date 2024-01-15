@@ -1,0 +1,21 @@
+.uzum-wishes__image{
+    display: block; 
+    margin: auto;
+}
+.uzum h2{
+ text-align: center;
+}
+.uzum p{
+    color: gray;
+    text-align: center  ;
+}
+.uzum-btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: var( --bg-py);
+    color: #fff;
+    border-radius: 6px;
+    display: block;
+    margin: auto;
+}

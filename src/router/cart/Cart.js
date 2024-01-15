@@ -1,9 +1,10 @@
 import React from 'react'
+import UzumCart from '../../components/uzum-cart/UzumCart'
 
 function Cart() {
   return (
     <div>
-      <h2>Cart</h2>
+      <UzumCart/>
     </div>
   )
 }
