@@ -22,7 +22,7 @@ function App() {
         <Route path='/product/:id' element={<Singleroute/>}/>
         <Route path='*' element={<Not/>}/>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
