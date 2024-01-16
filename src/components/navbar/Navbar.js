@@ -23,7 +23,6 @@ function Navbar() {
       <li className='navbar__item'>
         <NavLink to={"/"}>
           <IoHomeOutline/>
-          <span>home</span>
         </NavLink>
       </li>
       <li className="navbar__item">
