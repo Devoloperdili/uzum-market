@@ -7,23 +7,15 @@ function Login() {
 <div className='container  login'>
 <div className="box">
   <br />
-  <div className="card">
-    <form action="">
-
-    <input required className='inp' type="text" placeholder='username'  /> <br /> <br />
-    <input required className='inp' type="password" placeholder='password' /><br /> <br />
-    <input required className='inp' type="email" placeholder='email'  />  <br /> <br />
-    
-    <NavLink className="login__navlink" to={"/"}>
-      <span>asosiy sahifaga qaytish</span>
-    </NavLink>
-    <br />
-    <button  className="inp">kirish</button>
-    </form>
-    <br />
-  </div>
+  <input type="text" className="inp" placeholder='tel raqamni kiriting' /> <br /> <br />
+  <input type="text" className="inp" placeholder='telefonizga kelga kodni yozing' /> <br /> <br />
+  <input type="text" className="inp" placeholder='yoki emil kiriting' /> <br />
+  <br />  
+  <NavLink to={"/"}>
+    <button className="btn">kirish</button>
+  </NavLink>
 </div>
-  </div>
+</div>
   );
 }
 

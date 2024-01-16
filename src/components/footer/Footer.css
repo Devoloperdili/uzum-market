@@ -27,3 +27,9 @@ font-size: 30px;
     color: blue;
     font-size: 30px 
 }
+@media screen and (max-width:450px) {
+    .footer{
+      display: grid;
+      grid-template-columns: repeat(2,fr);
+    }
+}
