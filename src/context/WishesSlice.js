@@ -9,8 +9,11 @@ export const WishesSlice = createSlice({
     addToWishes(state, action) {
       state.value = [...state.value, action.payload]
     },
+    removeFromWishes(state, action){
+      state.value = state.value.filter(el => el.id !== action.payload.id)
+    }
   },
 });
 
-export const { addToWishes } = WishesSlice.actions;
+export const { addToWishes, removeFromWishes } = WishesSlice.actions;
 export default WishesSlice.reducer;

@@ -9,6 +9,7 @@ function Wishes() {
     <div>
       <UzumWishes/>
       <Products data={wishes}/>
+
     </div>
   );
 }

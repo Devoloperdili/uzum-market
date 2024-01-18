@@ -1,13 +1,15 @@
 import React from 'react';
 import './Products.css';
 import { MdOutlineShoppingCart } from 'react-icons/md';
-import { FaRegHeart } from 'react-icons/fa';
-import { addToWishes } from '../../context/WishesSlice';
+import { FaRegHeart, FaHeart } from 'react-icons/fa';
+import { addToWishes, removeFromWishes } from '../../context/WishesSlice';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 function Products({ title, data }) {
   const dispatch = useDispatch();
+  const wishes = useSelector((s)=>s.wishes.value)
+  console.log(wishes);
 
   return (
     <div className="container">
@@ -29,6 +31,7 @@ function Products({ title, data }) {
               <b className="product__price">{el.price?.brm()} so'm</b>
 
               <div onClick={() => dispatch(addToWishes(el))} className="product__heart">
+                
                 <FaRegHeart />
               </div>
               <div className="product__cart">

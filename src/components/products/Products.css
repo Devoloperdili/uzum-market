@@ -59,6 +59,8 @@
     right: 10px;
     font-size: 22px;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
 }
 .product__cart{
     position: absolute;

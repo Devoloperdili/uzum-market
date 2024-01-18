@@ -9,5 +9,5 @@ function Home({data}) {
     </div>
   )
 }
-
+ 
 export default Home
