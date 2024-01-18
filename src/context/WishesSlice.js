@@ -1,19 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit"
 
-export const WishesSlice = createSlice({
-  name: "wishes",
-  initialState: {
-    value: [],
-  },
-  reducers: {
-    addToWishes(state, action) {
-      state.value = [...state.value, action.payload]
+export const wishesSlice = createSlice({
+    name:"wishes",
+    initialState: {
+        value : []
     },
-    removeFromWishes(state, action){
-      state.value = state.value.filter(el => el.id !== action.payload.id)
+    reducers: {
+        addToWishes(state, action){
+            state.value = [...state.value, action.payload]
+        },
+        removeFromWishes(state, action){
+            state.value = state.value.filter(el => el.id !== action.payload.id)
+        }
     }
-  },
-});
+})
 
-export const { addToWishes, removeFromWishes } = WishesSlice.actions;
-export default WishesSlice.reducer;
+export const {addToWishes, removeFromWishes} = wishesSlice.actions
+export default wishesSlice.reducer

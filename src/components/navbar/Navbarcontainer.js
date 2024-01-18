@@ -1,19 +1,17 @@
 import React from 'react'
+import "./NavbarContainer.css"
 import SubHeader from './SubHeader'
 import Navbar from './Navbar'
-import NavbarBottom from './NavbarBootom'
-import "./NavbarContainer.css"
-function Navbarcon() {
+import NavbarBottom from './NavbarBottom'
+
+function NavbarContainer() {
   return (
     <div>
-      <SubHeader/>
-      <Navbar/>
-      <NavbarBottom/> 
-      <br />
-      <br />
-      <br />
+        <SubHeader/>
+        <Navbar/>
+        <NavbarBottom/>
     </div>
   )
 }
 
-export default Navbarcon
+export default NavbarContainer

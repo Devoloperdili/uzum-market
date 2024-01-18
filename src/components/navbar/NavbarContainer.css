@@ -134,9 +134,9 @@
 @media screen and (max-width:990px){
     .navbar__collection{
         position: fixed;
-        z-index: 10;
         bottom: 0;
         left: 0;
+        z-index: 10;
         width: 100%;
         height: 46px;
         background: #fff;
