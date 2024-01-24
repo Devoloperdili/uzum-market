@@ -3,13 +3,17 @@ import "./Products.css";
 import { IoHeartOutline, IoHeart, IoCartOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { addToWishes, removeFromWishes } from "../../context/wishesSlice";
-import {decCart,incCart,removeAll,removeCart} from '../../context/cartSlice'
+import { incCart } from "../../context/cartSlice"
 import { Link } from "react-router-dom";
+import {toast} from "react-toastify"
 
 function Products({ title, data }) {
   const dispatch = useDispatch();
   const wishes = useSelector((s) => s.wishes.value);
-  console.log(wishes);
+  const handleAddCart = (el)=>{
+    dispatch(incCart(el))
+    toast.success("Savatga qo'shildi")
+  }
   return (
     <div className="container">
       <div className="products">
@@ -20,11 +24,11 @@ function Products({ title, data }) {
               <Link to={`/login`} className="product__image">
                 <img src={el.url[0]} alt="rasm chiqadi" />
               </Link>
-              <p className="product__title">{el.title}</p>
-              <mark className="product__monthly">1500 so'm/oyiga</mark>
+              <p className="product__title">{title}</p>
+              <mark className="product__monthly">{(el.price * 1.5 / 12)?.brm()} so'm/oyiga</mark>
               <br />
               <br />
-              <del className="product__old-price">1500 so'm</del>
+              <del className="product__old-price">{(el.price * 1.2)?.brm()} so'm</del>
               <b className="product__price">{el.price?.brm()} so'm</b>
               {wishes?.some((liked) => liked.id === el.id) ? (
                 <div
@@ -41,7 +45,7 @@ function Products({ title, data }) {
                   <IoHeartOutline />
                 </div>
               )}
-              <div onClick={()=> dispatch(incCart(el))} className="product__cart">
+              <div onClick={()=> handleAddCart(el)} className="product__cart">
                 <IoCartOutline />
               </div>
             </div>

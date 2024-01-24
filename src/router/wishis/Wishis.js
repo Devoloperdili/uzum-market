@@ -4,7 +4,6 @@ import Products from '../../components/products/Products';
 
 function Wishis() {
   const wishes = useSelector(state => state.wishes.value)
-  console.log(wishes);
   return (
     <div>
         <Products data={wishes} title="Sevimlilar"/>

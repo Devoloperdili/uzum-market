@@ -5,7 +5,7 @@ function SubHeader() {
   return (
     <div className='sub__header'>
         <div className="container sub__header-wrapper">
-            <p>Shahar Namangan</p>
+            <p>Shahar Namangan </p>
             <p>Buyurtma 1 kunda bepul yetkazib beramiz</p>
             <p>Savol-javoblar. Buyurtmalar. Uzbek</p>
         </div>
